@@ -1,0 +1,120 @@
+{
+  "input": "/opt/scenegen/SceneGen/test_inputs/zen_room_anchor.png",
+  "combined_glb": "/opt/scenegen/SceneGen/test_outputs/zen_room/zen_room_combined.glb",
+  "elapsed_seconds": 169.03,
+  "gpu": "NVIDIA L4",
+  "seed": 42,
+  "boxes": {
+    "lamp": [
+      480,
+      25,
+      655,
+      205
+    ],
+    "bench": [
+      345,
+      405,
+      790,
+      525
+    ],
+    "plant": [
+      785,
+      100,
+      1025,
+      525
+    ],
+    "rug": [
+      45,
+      515,
+      1145,
+      690
+    ]
+  },
+  "asset_count": 4,
+  "assets": [
+    {
+      "index": 0,
+      "label": "lamp",
+      "node": "geometry_0",
+      "geometry": "geometry_0",
+      "path": "/opt/scenegen/SceneGen/test_outputs/zen_room/assets/00_lamp.glb",
+      "vertices": 26435,
+      "faces": 26542,
+      "bounds": [
+        [
+          0.02470820888226255,
+          -0.9488960992713158,
+          -0.9065470571644483
+        ],
+        [
+          0.6469206364152524,
+          0.1262028566227611,
+          -0.30658687732550693
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "label": "bench",
+      "node": "geometry_1",
+      "geometry": "geometry_1",
+      "path": "/opt/scenegen/SceneGen/test_outputs/zen_room/assets/01_bench.glb",
+      "vertices": 5388,
+      "faces": 8682,
+      "bounds": [
+        [
+          -0.3486282199691155,
+          0.5005032512246133,
+          0.2468085051989787
+        ],
+        [
+          0.09983639356337012,
+          1.0111039007286844,
+          0.6942069372766968
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "plant",
+      "node": "geometry_2",
+      "geometry": "geometry_2",
+      "path": "/opt/scenegen/SceneGen/test_outputs/zen_room/assets/02_plant.glb",
+      "vertices": 2719,
+      "faces": 4320,
+      "bounds": [
+        [
+          -0.6978715497923813,
+          -0.5074998857771565,
+          -0.49047608948239824
+        ],
+        [
+          0.19909839862315687,
+          -0.31429352080161455,
+          -0.28148280261055436
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "rug",
+      "node": "geometry_3",
+      "geometry": "geometry_3",
+      "path": "/opt/scenegen/SceneGen/test_outputs/zen_room/assets/03_rug.glb",
+      "vertices": 5858,
+      "faces": 11049,
+      "bounds": [
+        [
+          -0.5839845903113752,
+          -0.42171370727455193,
+          0.08876238018390775
+        ],
+        [
+          0.5519445414459299,
+          -0.4049005867223368,
+          0.998445195253311
+        ]
+      ]
+    }
+  ]
+}

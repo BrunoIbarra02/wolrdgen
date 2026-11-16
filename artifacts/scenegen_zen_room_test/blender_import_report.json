@@ -1,0 +1,119 @@
+{
+  "source_glb": "C:\\Users\\htsy4\\Documents\\ChatGPT\\wolrdgen\\artifacts\\scenegen_zen_room_test\\zen_room_combined.glb",
+  "blend_file": "C:\\Users\\htsy4\\Documents\\ChatGPT\\wolrdgen\\artifacts\\scenegen_zen_room_test\\zen_room_scenegen.blend",
+  "mesh_count": 4,
+  "objects": [
+    {
+      "name": "SceneGen_Lamp",
+      "location": [
+        0.3363535404205322,
+        0.6066675186157227,
+        -0.4106661379337311
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.075740098953247,
+        1.075740098953247,
+        1.075740098953247
+      ],
+      "vertices": 26435,
+      "polygons": 26542,
+      "materials": [
+        {
+          "name": "Material_0",
+          "images": [
+            "Image_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SceneGen_Bench",
+      "location": [
+        -0.1255822330713272,
+        -0.4690648317337036,
+        0.7580070495605469
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5158675312995911,
+        0.5158674716949463,
+        0.5158675312995911
+      ],
+      "vertices": 5388,
+      "polygons": 8682,
+      "materials": [
+        {
+          "name": "Material_1",
+          "images": [
+            "Image_1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SceneGen_Plant",
+      "location": [
+        -0.24915899336338043,
+        0.38547420501708984,
+        -0.40957966446876526
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.89436936378479,
+        0.89436936378479,
+        0.89436936378479
+      ],
+      "vertices": 2719,
+      "polygons": 4320,
+      "materials": [
+        {
+          "name": "Material_2",
+          "images": [
+            "Image_2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SceneGen_Rug",
+      "location": [
+        -0.01606343314051628,
+        -0.5422755479812622,
+        -0.4128853678703308
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.1312578916549683,
+        1.1312578916549683,
+        1.1312577724456787
+      ],
+      "vertices": 5858,
+      "polygons": 11049,
+      "materials": [
+        {
+          "name": "Material_3",
+          "images": [
+            "Image_3"
+          ]
+        }
+      ]
+    }
+  ]
+}

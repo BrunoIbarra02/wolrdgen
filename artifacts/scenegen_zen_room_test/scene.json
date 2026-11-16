@@ -1,0 +1,675 @@
+{
+  "$schema": "pcg_scene.schema.json",
+  "schemaVersion": "1.0.0",
+  "sceneId": "zen_room_scenegen_test_001",
+  "source": {
+    "image": "../wavespeed_relaxed_zen_room_v1/anchor.png",
+    "imageSizePixels": [
+      1300,
+      720
+    ],
+    "generator": "SceneGen",
+    "seed": 42,
+    "checkpoint": "haoningwu/SceneGen"
+  },
+  "coordinateSystem": {
+    "target": "UnrealEngine",
+    "handedness": "left",
+    "upAxis": "+Z",
+    "forwardAxis": "+X",
+    "rightAxis": "+Y",
+    "units": "centimeters",
+    "sourceToTarget": "Xue=-Zsg, Yue=Xsg, Zue=Ysg-floorY"
+  },
+  "metricCalibration": {
+    "metersPerSceneGenUnit": 2.229729,
+    "method": "known_size_prior",
+    "reference": {
+      "objectId": "bench_01",
+      "assumedWidthMeters": 2.0
+    },
+    "confidence": 0.62,
+    "userOverrideRecommended": true
+  },
+  "room": {
+    "type": "box_room_open_front",
+    "dimensionsCm": [
+      468.243,
+      468.243,
+      317.605
+    ],
+    "surfaces": [
+      {
+        "id": "floor_01",
+        "type": "floor",
+        "transform": {
+          "locationCm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotationEulerDeg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "dimensionsCm": [
+          468.243,
+          468.243,
+          2.0
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "pcgTags": [
+          "ground",
+          "walkable",
+          "indoor",
+          "spawn_surface"
+        ]
+      },
+      {
+        "id": "ceiling_01",
+        "type": "ceiling",
+        "transform": {
+          "locationCm": [
+            0.0,
+            0.0,
+            317.605
+          ],
+          "rotationEulerDeg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "dimensionsCm": [
+          468.243,
+          468.243,
+          2.0
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "pcgTags": [
+          "ceiling",
+          "indoor",
+          "attachment_surface"
+        ]
+      },
+      {
+        "id": "wall_back_01",
+        "type": "wall",
+        "transform": {
+          "locationCm": [
+            234.122,
+            0.0,
+            158.803
+          ],
+          "rotationEulerDeg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "dimensionsCm": [
+          10.0,
+          468.243,
+          317.605
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "pcgTags": [
+          "wall",
+          "indoor",
+          "attachment_surface"
+        ]
+      },
+      {
+        "id": "wall_left_01",
+        "type": "wall",
+        "transform": {
+          "locationCm": [
+            0.0,
+            -234.122,
+            158.803
+          ],
+          "rotationEulerDeg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "dimensionsCm": [
+          468.243,
+          10.0,
+          317.605
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pcgTags": [
+          "wall",
+          "indoor",
+          "attachment_surface"
+        ]
+      },
+      {
+        "id": "wall_right_01",
+        "type": "wall",
+        "transform": {
+          "locationCm": [
+            0.0,
+            234.122,
+            158.803
+          ],
+          "rotationEulerDeg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "dimensionsCm": [
+          468.243,
+          10.0,
+          317.605
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "pcgTags": [
+          "wall",
+          "indoor",
+          "attachment_surface"
+        ]
+      }
+    ],
+    "openings": [
+      {
+        "id": "opening_right_01",
+        "surfaceId": "wall_right_01",
+        "type": "window_or_glazed_door",
+        "sourceBoxPixelsXyxy": [
+          1150,
+          0,
+          1300,
+          720
+        ],
+        "geometryStatus": "unresolved_from_single_view",
+        "enabledForBooleanCut": false,
+        "confidence": 0.58
+      },
+      {
+        "id": "opening_front_01",
+        "type": "open_room_front",
+        "geometryStatus": "room_prior",
+        "enabledForBooleanCut": true,
+        "confidence": 0.9
+      }
+    ],
+    "inference": {
+      "method": "single_image_box_room_prior",
+      "confidence": 0.64,
+      "requiresMetricCalibration": true
+    }
+  },
+  "objects": [
+    {
+      "id": "plant_01",
+      "label": "potted_plant",
+      "category": "vegetation.indoor.potted_plant",
+      "asset": {
+        "uri": "pcg_assets/plant_01.glb",
+        "format": "glb",
+        "units": "meters",
+        "textures": "embedded",
+        "orientationBaked": true
+      },
+      "transform": {
+        "locationCm": [
+          135.248,
+          74.8775,
+          0.0
+        ],
+        "rotationEulerDeg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "rawGeneratedTransform": {
+        "locationCm": [
+          135.248,
+          74.8775,
+          -119.4218
+        ],
+        "sourcePivot": [
+          0.3358,
+          -0.9489,
+          -0.6066
+        ]
+      },
+      "dimensionsCm": [
+        133.7749,
+        138.7365,
+        239.7179
+      ],
+      "anchor": {
+        "type": "floor",
+        "surfaceId": "floor_01"
+      },
+      "collision": {
+        "type": "aabb",
+        "minCm": [
+          68.3606,
+          5.5093,
+          0.0
+        ],
+        "maxCm": [
+          202.1354,
+          144.2458,
+          239.7179
+        ]
+      },
+      "sourceSegmentation": {
+        "instanceId": 3,
+        "colorRgb": [
+          0,
+          0,
+          255
+        ],
+        "boxPixelsXyxy": [
+          785,
+          100,
+          1025,
+          525
+        ],
+        "labelConfidence": 0.93,
+        "method": "SAM2 box prompt plus geometry inspection"
+      },
+      "pcg": {
+        "enabled": true,
+        "spawnMode": "fixed_seed_asset",
+        "tags": [
+          "vegetation",
+          "indoor",
+          "prop",
+          "floor_supported"
+        ],
+        "allowReplacement": true,
+        "placementPriority": 100
+      }
+    },
+    {
+      "id": "lamp_01",
+      "label": "hanging_lamp",
+      "category": "lighting.ceiling.pendant",
+      "asset": {
+        "uri": "pcg_assets/lamp_01.glb",
+        "format": "glb",
+        "units": "meters",
+        "textures": "embedded",
+        "orientationBaked": true
+      },
+      "transform": {
+        "locationCm": [
+          -104.9105,
+          -27.7369,
+          317.6051
+        ],
+        "rotationEulerDeg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "rawGeneratedTransform": {
+        "locationCm": [
+          -104.9105,
+          -27.7369,
+          317.6051
+        ],
+        "sourcePivot": [
+          -0.1244,
+          1.0111,
+          0.4705
+        ]
+      },
+      "dimensionsCm": [
+        99.7577,
+        99.9955,
+        113.8501
+      ],
+      "anchor": {
+        "type": "ceiling",
+        "surfaceId": "ceiling_01"
+      },
+      "collision": {
+        "type": "aabb",
+        "minCm": [
+          -154.7893,
+          -77.7346,
+          203.755
+        ],
+        "maxCm": [
+          -55.0316,
+          22.2608,
+          317.6051
+        ]
+      },
+      "sourceSegmentation": {
+        "instanceId": 1,
+        "colorRgb": [
+          255,
+          0,
+          0
+        ],
+        "boxPixelsXyxy": [
+          480,
+          25,
+          655,
+          205
+        ],
+        "labelConfidence": 0.91,
+        "method": "SAM2 box prompt plus geometry inspection"
+      },
+      "pcg": {
+        "enabled": true,
+        "spawnMode": "fixed_seed_asset",
+        "tags": [
+          "lighting",
+          "indoor",
+          "ceiling_supported"
+        ],
+        "allowReplacement": true,
+        "placementPriority": 100
+      }
+    },
+    {
+      "id": "bench_01",
+      "label": "wooden_bench",
+      "category": "furniture.seating.bench",
+      "asset": {
+        "uri": "pcg_assets/bench_01.glb",
+        "format": "glb",
+        "units": "meters",
+        "textures": "embedded",
+        "orientationBaked": true
+      },
+      "transform": {
+        "locationCm": [
+          86.063,
+          -55.6065,
+          0.0
+        ],
+        "rotationEulerDeg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "rawGeneratedTransform": {
+        "locationCm": [
+          86.063,
+          -55.6065,
+          -21.0024
+        ],
+        "sourcePivot": [
+          -0.2494,
+          -0.5075,
+          -0.386
+        ]
+      },
+      "dimensionsCm": [
+        46.5998,
+        200.0,
+        43.0798
+      ],
+      "anchor": {
+        "type": "floor",
+        "surfaceId": "floor_01"
+      },
+      "collision": {
+        "type": "aabb",
+        "minCm": [
+          62.763,
+          -155.6065,
+          0.0
+        ],
+        "maxCm": [
+          109.3629,
+          44.3935,
+          43.0798
+        ]
+      },
+      "sourceSegmentation": {
+        "instanceId": 2,
+        "colorRgb": [
+          0,
+          255,
+          0
+        ],
+        "boxPixelsXyxy": [
+          345,
+          405,
+          790,
+          525
+        ],
+        "labelConfidence": 0.96,
+        "method": "SAM2 box prompt plus geometry inspection"
+      },
+      "pcg": {
+        "enabled": true,
+        "spawnMode": "fixed_seed_asset",
+        "tags": [
+          "furniture",
+          "seating",
+          "wood",
+          "floor_supported"
+        ],
+        "allowReplacement": true,
+        "placementPriority": 100
+      }
+    },
+    {
+      "id": "rug_01",
+      "label": "area_rug",
+      "category": "surface.floor.rug",
+      "asset": {
+        "uri": "pcg_assets/rug_01.glb",
+        "format": "glb",
+        "units": "meters",
+        "textures": "embedded",
+        "orientationBaked": true
+      },
+      "transform": {
+        "locationCm": [
+          -121.2089,
+          -3.572,
+          0.0
+        ],
+        "rotationEulerDeg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "rawGeneratedTransform": {
+        "locationCm": [
+          -121.2089,
+          -3.572,
+          0.0
+        ],
+        "sourcePivot": [
+          -0.016,
+          -0.4133,
+          0.5436
+        ]
+      },
+      "dimensionsCm": [
+        202.8346,
+        253.2814,
+        3.7489
+      ],
+      "anchor": {
+        "type": "floor_surface",
+        "surfaceId": "floor_01"
+      },
+      "collision": {
+        "type": "aabb",
+        "minCm": [
+          -222.6262,
+          -130.2127,
+          -1.8744
+        ],
+        "maxCm": [
+          -19.7916,
+          123.0687,
+          1.8744
+        ]
+      },
+      "sourceSegmentation": {
+        "instanceId": 4,
+        "colorRgb": [
+          255,
+          255,
+          0
+        ],
+        "boxPixelsXyxy": [
+          45,
+          515,
+          1145,
+          690
+        ],
+        "labelConfidence": 0.97,
+        "method": "SAM2 box prompt plus geometry inspection"
+      },
+      "pcg": {
+        "enabled": true,
+        "spawnMode": "fixed_seed_asset",
+        "tags": [
+          "surface",
+          "rug",
+          "walkable_overlay",
+          "floor_supported"
+        ],
+        "allowReplacement": true,
+        "placementPriority": 100
+      }
+    }
+  ],
+  "initialConditions": {
+    "deterministicSeed": 42,
+    "groundSurfaceId": "floor_01",
+    "collisionPolicy": "reject_overlap_then_project_to_anchor",
+    "placementRules": [
+      {
+        "tag": "floor_supported",
+        "operation": "snap_bottom_to_surface",
+        "surfaceTag": "ground",
+        "offsetCm": 0.0
+      },
+      {
+        "tag": "ceiling_supported",
+        "operation": "snap_top_to_surface",
+        "surfaceTag": "ceiling",
+        "offsetCm": 0.0
+      },
+      {
+        "tag": "walkable_overlay",
+        "operation": "conform_to_surface",
+        "surfaceTag": "ground",
+        "offsetCm": 0.5
+      }
+    ],
+    "pcgInputs": {
+      "fixedObjects": [
+        "plant_01",
+        "lamp_01",
+        "bench_01",
+        "rug_01"
+      ],
+      "spawnSurfaces": [
+        "floor_01"
+      ],
+      "exclusionVolumesFromObjects": true,
+      "wallAttachmentSurfaces": [
+        "wall_back_01",
+        "wall_left_01",
+        "wall_right_01"
+      ],
+      "unresolvedOpenings": [
+        "opening_right_01"
+      ]
+    }
+  },
+  "postprocess": {
+    "correctionsApplied": [
+      {
+        "objectId": "plant_01",
+        "type": "snap_to_anchor",
+        "translationCm": [
+          0.0,
+          0.0,
+          119.4218
+        ],
+        "reason": "Snap generated floor pivot to inferred room surface"
+      },
+      {
+        "objectId": "bench_01",
+        "type": "snap_to_anchor",
+        "translationCm": [
+          0.0,
+          0.0,
+          21.0024
+        ],
+        "reason": "Snap generated floor pivot to inferred room surface"
+      }
+    ],
+    "orientation": "baked_into_each_metric_glb",
+    "textures": "embedded_in_each_glb"
+  },
+  "quality": {
+    "objectsGenerated": 4,
+    "objectsLabeled": 4,
+    "roomGeometryGeneratedByModel": false,
+    "roomGeometryInferredByPostprocess": true,
+    "warnings": [
+      "Absolute scale is inferred from an assumed 2.0 m bench width.",
+      "Wall geometry is a box-room prior, not direct SceneGen output.",
+      "The right-side glazed opening needs multi-view or user calibration before boolean cutting."
+    ]
+  }
+}

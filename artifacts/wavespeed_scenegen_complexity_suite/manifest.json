@@ -1,0 +1,111 @@
+{
+  "suite": "wavespeed_scenegen_complexity_suite_v1",
+  "created_at": "2026-10-09T08:09:14.703517+00:00",
+  "model": "wavespeed-ai/qwen-image/text-to-image-2512",
+  "request": {
+    "size": "1280*720",
+    "output_format": "png"
+  },
+  "scenes": [
+    {
+      "id": "scene_06",
+      "seed": 61006,
+      "object_count": 6,
+      "labels": [
+        "sofa",
+        "coffee_table",
+        "area_rug",
+        "floor_lamp",
+        "potted_plant",
+        "armchair"
+      ],
+      "prompt": "Photorealistic interior architectural visualization, simple rectangular room, all objects fully visible and spatially separated, no object occluding another, eye-level wide shot, 24mm lens, deep focus, soft diffuse daylight, even exposure, physically plausible PBR materials, fixed clean geometry. No people, no animals, no text, no logo, no mirror, no clutter, no extra furniture, no duplicated objects. A calm modern living room containing exactly six movable objects: exactly one beige three-seat sofa against the back wall, one rectangular oak coffee table in front, one large blue-gray area rug under the table, one black floor lamp in the back-left corner, one tall potted ficus in the back-right corner, and one rust-colored armchair on the left.",
+      "task_id": "e72d5dce0d8e42dd9078f0af3716dc42",
+      "latency_seconds": 29.15,
+      "file": "scene_06.png",
+      "sha256": "2282d028f9b904151d5de6631104dbcdda159a793f8c39b0b4b89aed0048761e",
+      "result_timings": {
+        "inference": 22492
+      }
+    },
+    {
+      "id": "scene_09",
+      "seed": 91009,
+      "object_count": 9,
+      "labels": [
+        "workbench",
+        "stool",
+        "shelving_unit",
+        "tool_chest",
+        "floor_lamp",
+        "area_rug",
+        "potted_plant",
+        "storage_cabinet",
+        "wooden_crate"
+      ],
+      "prompt": "Photorealistic interior architectural visualization, simple rectangular room, all objects fully visible and spatially separated, no object occluding another, eye-level wide shot, 24mm lens, deep focus, soft diffuse daylight, even exposure, physically plausible PBR materials, fixed clean geometry. No people, no animals, no text, no logo, no mirror, no clutter, no extra furniture, no duplicated objects. A relaxed artisan studio containing exactly nine large distinct objects: one long wooden workbench against the back wall, one round stool in front of it, one tall open shelving unit on the left wall, one red metal tool chest, one industrial floor lamp, one flat woven area rug, one tall potted plant, one closed storage cabinet on the right wall, and one wooden crate on the floor. Keep generous visible gaps between every object; shelves are empty.",
+      "task_id": "96a815bc42ee4e9c86344ea7d5a3b28e",
+      "latency_seconds": 30.132,
+      "file": "scene_09.png",
+      "sha256": "51ce8f64f87037dc3b810ad20abb4513650312ebdc40592581e41b0f0daa3241",
+      "result_timings": {
+        "inference": 25818
+      }
+    },
+    {
+      "id": "scene_12",
+      "seed": 121012,
+      "object_count": 12,
+      "labels": [
+        "sofa",
+        "armchair_left",
+        "armchair_right",
+        "coffee_table",
+        "side_table",
+        "bookcase",
+        "media_console",
+        "floor_lamp",
+        "area_rug",
+        "potted_plant",
+        "ottoman",
+        "storage_chest"
+      ],
+      "prompt": "Photorealistic interior architectural visualization, simple rectangular room, all objects fully visible and spatially separated, no object occluding another, eye-level wide shot, 24mm lens, deep focus, soft diffuse daylight, even exposure, physically plausible PBR materials, fixed clean geometry. No people, no animals, no text, no logo, no mirror, no clutter, no extra furniture, no duplicated objects. A spacious warm loft lounge containing exactly twelve clearly separated objects: one tan sofa centered at the back, two matching green armchairs separated on its left and right, one oval coffee table, one small side table, one tall bookcase on the left wall, one low media console on the right wall, one arc floor lamp, one large cream area rug, one tall potted palm, one round ottoman, and one wooden storage chest. Every item is fully visible with clean gaps.",
+      "task_id": "0ddcc79c1cd647e998cce46357ba245c",
+      "latency_seconds": 31.752,
+      "file": "scene_12.png",
+      "sha256": "9908c42efa649addf8d351c1ba7ade16ab5b839dc50d0675ee4130f3b527f679",
+      "result_timings": {
+        "inference": 25581
+      }
+    },
+    {
+      "id": "scene_09_repeat",
+      "repeat_of": "scene_09",
+      "seed": 91009,
+      "object_count": 9,
+      "labels": [
+        "workbench",
+        "stool",
+        "shelving_unit",
+        "tool_chest",
+        "floor_lamp",
+        "area_rug",
+        "potted_plant",
+        "storage_cabinet",
+        "wooden_crate"
+      ],
+      "prompt": "Photorealistic interior architectural visualization, simple rectangular room, all objects fully visible and spatially separated, no object occluding another, eye-level wide shot, 24mm lens, deep focus, soft diffuse daylight, even exposure, physically plausible PBR materials, fixed clean geometry. No people, no animals, no text, no logo, no mirror, no clutter, no extra furniture, no duplicated objects. A relaxed artisan studio containing exactly nine large distinct objects: one long wooden workbench against the back wall, one round stool in front of it, one tall open shelving unit on the left wall, one red metal tool chest, one industrial floor lamp, one flat woven area rug, one tall potted plant, one closed storage cabinet on the right wall, and one wooden crate on the floor. Keep generous visible gaps between every object; shelves are empty.",
+      "task_id": "4c8f3e3775914913a376bf63fba2a712",
+      "latency_seconds": 33.245,
+      "file": "scene_09_repeat.png",
+      "sha256": "18092275359c01bfc9c61cfb65241d5bdea273ba2e7e55e241cb1a51bc99c1e2",
+      "result_timings": {
+        "inference": 24701
+      }
+    }
+  ],
+  "security": {
+    "api_key_stored": false
+  }
+}

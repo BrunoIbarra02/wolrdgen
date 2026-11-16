@@ -1,0 +1,38 @@
+{
+  "dataset_id": "wavespeed_rural_courtyard_v1",
+  "created_at": "2026-09-26",
+  "purpose": "Uncalibrated synthetic multi-view smoke test for WorldSculpt preprocessing",
+  "anchor": {
+    "model": "wavespeed-ai/qwen-image/text-to-image-2512",
+    "seed": 42042,
+    "requested_size": "1536*1024",
+    "task_id": "79228921ab32441886ee64a110d654fc"
+  },
+  "novel_views": {
+    "model": "wavespeed-ai/qwen-image/edit-multiple-angles",
+    "requested_vertical_angle_deg": 30,
+    "requested_distance": 2,
+    "angles_are_nominal_not_calibrated": true
+  },
+  "views": [
+    {"file": "view_az000.png", "azimuth_deg": 0, "width": 1536, "height": 1024, "task_id": "79228921ab32441886ee64a110d654fc", "sha256": "38948e72c98cb8c0a75e294dd28c993e14a81408fe0ce9b8c8843d41a005b760"},
+    {"file": "view_az045.png", "azimuth_deg": 45, "width": 1256, "height": 832, "task_id": "996611f67ac445f48df91e1064c55e40", "sha256": "d364cdc54be6e1a85a1dc270249c5741f04f81d5b2c21e5fdd260275fa47b439"},
+    {"file": "view_az090.png", "azimuth_deg": 90, "width": 1256, "height": 832, "task_id": "f75610358c8b4222bebafdb69eb4d579", "sha256": "696fc27a0da9b1320c4ad8ae87db72b02a14de109b9a07aa93705cdc4a334880"},
+    {"file": "view_az135.png", "azimuth_deg": 135, "width": 1256, "height": 832, "task_id": "9d458b08605e4c6eab9d48ed31963efc", "sha256": "1b28ffd5f30d3aaefd5e9cd9e65c4e7a4a677ae523f18e46df79b0941dbedc35"},
+    {"file": "view_az180.png", "azimuth_deg": 180, "width": 1256, "height": 832, "task_id": "9aa1fb888ed8401e89d8f07e32f08213", "sha256": "05959367f63e2b3496b3b41964443ac368d9199d254e28cb2597536c9bac32e3"},
+    {"file": "view_az225.png", "azimuth_deg": 225, "width": 1256, "height": 832, "task_id": "0a46e51966874cceab39f4e87c0427ac", "sha256": "65c7d6ce75d7c9dbaf9aef2c31317544dc4d33f8030a5a0d6ef2936cd3e87eee"},
+    {"file": "view_az270.png", "azimuth_deg": 270, "width": 1256, "height": 832, "task_id": "82624028b4fe4b2481a3a1083157dba6", "sha256": "f95dad72fb3b8d2bf31d07e69c275e1c94120876dc67bbdc82ac8aa7851f77fe"},
+    {"file": "view_az315.png", "azimuth_deg": 315, "width": 1256, "height": 832, "task_id": "a5da79f2164541d4a1221ed43cbb9573", "sha256": "2da0d9169b78d8f83d0874feba49d1d54c312efde02fb712d45582c53c2eafce"}
+  ],
+  "visual_qa": {
+    "accepted_for_smoke_test": true,
+    "persistent_instances": ["stone_shed", "wooden_cart", "stone_trough", "ground"],
+    "conditionally_persistent_instances": ["two_primary_boulders", "dry_stone_boundary_wall"],
+    "exclude_from_reconstruction": ["small_fence_segments", "third_boulder", "hallucinated_bench_or_small_props"],
+    "notes": "The core shed/cart/trough layout is broadly consistent. Fence topology, small props and exact rock count drift across views. Recover cameras from pixels; do not treat requested angles as calibrated poses."
+  },
+  "security": {
+    "api_key_stored": false,
+    "rotation_recommended": true
+  }
+}
